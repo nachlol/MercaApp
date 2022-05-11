@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E702E06D282C3141008898BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E702E06C282C3141008898BB /* AppDelegate.swift */; };
+		E702E06F282C3141008898BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E702E06E282C3141008898BB /* SceneDelegate.swift */; };
+		E702E071282C3141008898BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E702E070282C3141008898BB /* ViewController.swift */; };
+		E702E074282C3141008898BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E702E072282C3141008898BB /* Main.storyboard */; };
+		E702E076282C3143008898BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E702E075282C3143008898BB /* Assets.xcassets */; };
+		E702E079282C3143008898BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E702E077282C3143008898BB /* LaunchScreen.storyboard */; };
+		E702E084282C3143008898BB /* MercaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E702E083282C3143008898BB /* MercaAppTests.swift */; };
+		E702E08E282C3143008898BB /* MercaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E702E08D282C3143008898BB /* MercaAppUITests.swift */; };
+		E702E090282C3143008898BB /* MercaAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E702E08F282C3143008898BB /* MercaAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E702E080282C3143008898BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E702E061282C3141008898BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E702E068282C3141008898BB;
+			remoteInfo = MercaApp;
+		};
+		E702E08A282C3143008898BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E702E061282C3141008898BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E702E068282C3141008898BB;
+			remoteInfo = MercaApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E702E069282C3141008898BB /* MercaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E702E06C282C3141008898BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E702E06E282C3141008898BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E702E070282C3141008898BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E702E073282C3141008898BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E702E075282C3143008898BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E702E078282C3143008898BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E702E07A282C3143008898BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E702E07F282C3143008898BB /* MercaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MercaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E702E083282C3143008898BB /* MercaAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MercaAppTests.swift; sourceTree = "<group>"; };
+		E702E089282C3143008898BB /* MercaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MercaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E702E08D282C3143008898BB /* MercaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MercaAppUITests.swift; sourceTree = "<group>"; };
+		E702E08F282C3143008898BB /* MercaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MercaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E702E066282C3141008898BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E702E07C282C3143008898BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E702E086282C3143008898BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E702E060282C3141008898BB = {
+			isa = PBXGroup;
+			children = (
+				E702E06B282C3141008898BB /* MercaApp */,
+				E702E082282C3143008898BB /* MercaAppTests */,
+				E702E08C282C3143008898BB /* MercaAppUITests */,
+				E702E06A282C3141008898BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E702E06A282C3141008898BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E702E069282C3141008898BB /* MercaApp.app */,
+				E702E07F282C3143008898BB /* MercaAppTests.xctest */,
+				E702E089282C3143008898BB /* MercaAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E702E06B282C3141008898BB /* MercaApp */ = {
+			isa = PBXGroup;
+			children = (
+				E702E06C282C3141008898BB /* AppDelegate.swift */,
+				E702E06E282C3141008898BB /* SceneDelegate.swift */,
+				E702E070282C3141008898BB /* ViewController.swift */,
+				E702E072282C3141008898BB /* Main.storyboard */,
+				E702E075282C3143008898BB /* Assets.xcassets */,
+				E702E077282C3143008898BB /* LaunchScreen.storyboard */,
+				E702E07A282C3143008898BB /* Info.plist */,
+			);
+			path = MercaApp;
+			sourceTree = "<group>";
+		};
+		E702E082282C3143008898BB /* MercaAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				E702E083282C3143008898BB /* MercaAppTests.swift */,
+			);
+			path = MercaAppTests;
+			sourceTree = "<group>";
+		};
+		E702E08C282C3143008898BB /* MercaAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E702E08D282C3143008898BB /* MercaAppUITests.swift */,
+				E702E08F282C3143008898BB /* MercaAppUITestsLaunchTests.swift */,
+			);
+			path = MercaAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E702E068282C3141008898BB /* MercaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E702E093282C3143008898BB /* Build configuration list for PBXNativeTarget "MercaApp" */;
+			buildPhases = (
+				E702E065282C3141008898BB /* Sources */,
+				E702E066282C3141008898BB /* Frameworks */,
+				E702E067282C3141008898BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MercaApp;
+			productName = MercaApp;
+			productReference = E702E069282C3141008898BB /* MercaApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E702E07E282C3143008898BB /* MercaAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E702E096282C3143008898BB /* Build configuration list for PBXNativeTarget "MercaAppTests" */;
+			buildPhases = (
+				E702E07B282C3143008898BB /* Sources */,
+				E702E07C282C3143008898BB /* Frameworks */,
+				E702E07D282C3143008898BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E702E081282C3143008898BB /* PBXTargetDependency */,
+			);
+			name = MercaAppTests;
+			productName = MercaAppTests;
+			productReference = E702E07F282C3143008898BB /* MercaAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E702E088282C3143008898BB /* MercaAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E702E099282C3143008898BB /* Build configuration list for PBXNativeTarget "MercaAppUITests" */;
+			buildPhases = (
+				E702E085282C3143008898BB /* Sources */,
+				E702E086282C3143008898BB /* Frameworks */,
+				E702E087282C3143008898BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E702E08B282C3143008898BB /* PBXTargetDependency */,
+			);
+			name = MercaAppUITests;
+			productName = MercaAppUITests;
+			productReference = E702E089282C3143008898BB /* MercaAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E702E061282C3141008898BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					E702E068282C3141008898BB = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					E702E07E282C3143008898BB = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = E702E068282C3141008898BB;
+					};
+					E702E088282C3143008898BB = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = E702E068282C3141008898BB;
+					};
+				};
+			};
+			buildConfigurationList = E702E064282C3141008898BB /* Build configuration list for PBXProject "MercaApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E702E060282C3141008898BB;
+			productRefGroup = E702E06A282C3141008898BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E702E068282C3141008898BB /* MercaApp */,
+				E702E07E282C3143008898BB /* MercaAppTests */,
+				E702E088282C3143008898BB /* MercaAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E702E067282C3141008898BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E702E079282C3143008898BB /* LaunchScreen.storyboard in Resources */,
+				E702E076282C3143008898BB /* Assets.xcassets in Resources */,
+				E702E074282C3141008898BB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E702E07D282C3143008898BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E702E087282C3143008898BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E702E065282C3141008898BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E702E071282C3141008898BB /* ViewController.swift in Sources */,
+				E702E06D282C3141008898BB /* AppDelegate.swift in Sources */,
+				E702E06F282C3141008898BB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E702E07B282C3143008898BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E702E084282C3143008898BB /* MercaAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E702E085282C3143008898BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E702E090282C3143008898BB /* MercaAppUITestsLaunchTests.swift in Sources */,
+				E702E08E282C3143008898BB /* MercaAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E702E081282C3143008898BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E702E068282C3141008898BB /* MercaApp */;
+			targetProxy = E702E080282C3143008898BB /* PBXContainerItemProxy */;
+		};
+		E702E08B282C3143008898BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E702E068282C3141008898BB /* MercaApp */;
+			targetProxy = E702E08A282C3143008898BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E702E072282C3141008898BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E702E073282C3141008898BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E702E077282C3143008898BB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E702E078282C3143008898BB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E702E091282C3143008898BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E702E092282C3143008898BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E702E094282C3143008898BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MercaApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.MercaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E702E095282C3143008898BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MercaApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.MercaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E702E097282C3143008898BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.MercaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MercaApp.app/MercaApp";
+			};
+			name = Debug;
+		};
+		E702E098282C3143008898BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.MercaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MercaApp.app/MercaApp";
+			};
+			name = Release;
+		};
+		E702E09A282C3143008898BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.MercaAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MercaApp;
+			};
+			name = Debug;
+		};
+		E702E09B282C3143008898BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.MercaAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MercaApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E702E064282C3141008898BB /* Build configuration list for PBXProject "MercaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E702E091282C3143008898BB /* Debug */,
+				E702E092282C3143008898BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E702E093282C3143008898BB /* Build configuration list for PBXNativeTarget "MercaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E702E094282C3143008898BB /* Debug */,
+				E702E095282C3143008898BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E702E096282C3143008898BB /* Build configuration list for PBXNativeTarget "MercaAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E702E097282C3143008898BB /* Debug */,
+				E702E098282C3143008898BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E702E099282C3143008898BB /* Build configuration list for PBXNativeTarget "MercaAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E702E09A282C3143008898BB /* Debug */,
+				E702E09B282C3143008898BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E702E061282C3141008898BB /* Project object */;
+}
