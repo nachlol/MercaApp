@@ -13,32 +13,32 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var tableviewProduct: UITableView!
     @IBOutlet weak var textfieldSearch: UITextField!
     
-    var listProduct: [ViewModelProduct] = [
-        ViewModelProduct(title: "Nicolas", price: "$3000.00", quota: "Hasta donde no se", shippping: "Envios gratis"),
-        ViewModelProduct(title: "Carlos", price: "$2000.00", quota: "Hasta 13 donde no se", shippping: "Envios gratis")
-    ]
+    var interactor: SearchViewBusinessLogic?
+    var router: SearchViewWireFrame?
+    
+    var listProduct: [ViewModelProduct] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        interactor?.fetchProducts(text: "Motorola%20G6")
         registerTableview()
+        setUpTextfield()
+    }
+    
+    private func setUpTextfield() {
         textfieldSearch.setLeftPaddingPoints(35)
         textfieldSearch.layer.borderColor = UIColor.red.cgColor
         textfieldSearch.placeholder = "Estoy Buscando ..."
     }
-    
-    func registerTableview() {
+    private func registerTableview() {
         tableviewProduct.delegate = self
         tableviewProduct.dataSource = self
         tableviewProduct.register(UINib(nibName: "ProductTableViewCell", bundle: .main), forCellReuseIdentifier: "cellProduct")
-        listProduct = listProduct.sorted(by: { view1, view2 in
-            view1.title < view2.title
-        })
     }
 }
 
 //  MARK: - UITableViewDataSource -
 extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
-   
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listProduct.count
     }
@@ -50,10 +50,14 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-extension UITextField {
-    func setLeftPaddingPoints(_ amount:CGFloat){
-        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: amount, height: self.frame.size.height))
-        self.leftView = paddingView
-        self.leftViewMode = .always
+//  MARK: - SearchViewDisplayLogic -
+extension SearchViewController: SearchViewDisplayLogic {
+
+    func displayListProduct(viewModel: [ViewModelProduct]) {
+        listProduct.removeAll()
+        listProduct = viewModel
+        DispatchQueue.main.async {
+            self.tableviewProduct.reloadData()
+        }
     }
 }

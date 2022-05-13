@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		E702E06D282C3141008898BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E702E06C282C3141008898BB /* AppDelegate.swift */; };
 		E702E06F282C3141008898BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E702E06E282C3141008898BB /* SceneDelegate.swift */; };
-		E702E071282C3141008898BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E702E070282C3141008898BB /* ViewController.swift */; };
 		E702E074282C3141008898BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E702E072282C3141008898BB /* Main.storyboard */; };
 		E702E076282C3143008898BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E702E075282C3143008898BB /* Assets.xcassets */; };
 		E702E079282C3143008898BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E702E077282C3143008898BB /* LaunchScreen.storyboard */; };
@@ -21,6 +20,13 @@
 		E76CE634282C8662000821D3 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76CE633282C8662000821D3 /* ProductTableViewCell.swift */; };
 		E76CE636282C86ED000821D3 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E76CE635282C86ED000821D3 /* ProductTableViewCell.xib */; };
 		E76CE639282C8F47000821D3 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76CE638282C8F47000821D3 /* Product.swift */; };
+		E7BD6300282DDB7F0072727F /* SearchViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BD62FF282DDB7F0072727F /* SearchViewContract.swift */; };
+		E7BD6302282DDCDC0072727F /* SearchViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BD6301282DDCDC0072727F /* SearchViewInteractor.swift */; };
+		E7BD6304282DDD750072727F /* SearchViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BD6303282DDD750072727F /* SearchViewPresenter.swift */; };
+		E7BD6306282DDF7A0072727F /* SearchViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BD6305282DDF7A0072727F /* SearchViewRouter.swift */; };
+		E7BD6309282DE4430072727F /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BD6308282DE4430072727F /* UITextField+Extension.swift */; };
+		E7BD630D282DE6260072727F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BD630B282DE6260072727F /* Constants.swift */; };
+		E7BD630E282DE6260072727F /* ManageConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BD630C282DE6260072727F /* ManageConnections.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +50,6 @@
 		E702E069282C3141008898BB /* MercaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E702E06C282C3141008898BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E702E06E282C3141008898BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E702E070282C3141008898BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E702E073282C3141008898BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E702E075282C3143008898BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E702E078282C3143008898BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +64,13 @@
 		E76CE633282C8662000821D3 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		E76CE635282C86ED000821D3 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
 		E76CE638282C8F47000821D3 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		E7BD62FF282DDB7F0072727F /* SearchViewContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewContract.swift; sourceTree = "<group>"; };
+		E7BD6301282DDCDC0072727F /* SearchViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewInteractor.swift; sourceTree = "<group>"; };
+		E7BD6303282DDD750072727F /* SearchViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewPresenter.swift; sourceTree = "<group>"; };
+		E7BD6305282DDF7A0072727F /* SearchViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewRouter.swift; sourceTree = "<group>"; };
+		E7BD6308282DE4430072727F /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		E7BD630B282DE6260072727F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E7BD630C282DE6260072727F /* ManageConnections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageConnections.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,10 +121,11 @@
 		E702E06B282C3141008898BB /* MercaApp */ = {
 			isa = PBXGroup;
 			children = (
+				E7BD630A282DE5980072727F /* Resources */,
+				E7BD6307282DE40A0072727F /* Extensions */,
 				E76CE621282C81DF000821D3 /* Modules */,
 				E702E06C282C3141008898BB /* AppDelegate.swift */,
 				E702E06E282C3141008898BB /* SceneDelegate.swift */,
-				E702E070282C3141008898BB /* ViewController.swift */,
 				E702E072282C3141008898BB /* Main.storyboard */,
 				E702E075282C3143008898BB /* Assets.xcassets */,
 				E702E077282C3143008898BB /* LaunchScreen.storyboard */,
@@ -178,6 +191,7 @@
 		E76CE625282C823A000821D3 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				E7BD62FF282DDB7F0072727F /* SearchViewContract.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -195,6 +209,7 @@
 		E76CE627282C824A000821D3 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				E7BD6305282DDF7A0072727F /* SearchViewRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -202,6 +217,7 @@
 		E76CE628282C8253000821D3 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				E7BD6301282DDCDC0072727F /* SearchViewInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -209,6 +225,7 @@
 		E76CE629282C826B000821D3 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				E7BD6303282DDD750072727F /* SearchViewPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -228,6 +245,23 @@
 				E76CE638282C8F47000821D3 /* Product.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E7BD6307282DE40A0072727F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E7BD6308282DE4430072727F /* UITextField+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E7BD630A282DE5980072727F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E7BD630B282DE6260072727F /* Constants.swift */,
+				E7BD630C282DE6260072727F /* ManageConnections.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,12 +397,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E702E071282C3141008898BB /* ViewController.swift in Sources */,
+				E7BD6302282DDCDC0072727F /* SearchViewInteractor.swift in Sources */,
+				E7BD630D282DE6260072727F /* Constants.swift in Sources */,
 				E702E06D282C3141008898BB /* AppDelegate.swift in Sources */,
 				E76CE634282C8662000821D3 /* ProductTableViewCell.swift in Sources */,
+				E7BD6304282DDD750072727F /* SearchViewPresenter.swift in Sources */,
 				E76CE62C282C832A000821D3 /* SearchViewController.swift in Sources */,
+				E7BD630E282DE6260072727F /* ManageConnections.swift in Sources */,
+				E7BD6309282DE4430072727F /* UITextField+Extension.swift in Sources */,
 				E702E06F282C3141008898BB /* SceneDelegate.swift in Sources */,
 				E76CE639282C8F47000821D3 /* Product.swift in Sources */,
+				E7BD6300282DDB7F0072727F /* SearchViewContract.swift in Sources */,
+				E7BD6306282DDF7A0072727F /* SearchViewRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,7 +591,6 @@
 				INFOPLIST_FILE = MercaApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Search;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -579,7 +618,6 @@
 				INFOPLIST_FILE = MercaApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Search;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

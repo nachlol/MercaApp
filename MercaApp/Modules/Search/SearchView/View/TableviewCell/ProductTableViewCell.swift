@@ -9,6 +9,7 @@ import UIKit
 
 class ProductTableViewCell: UITableViewCell {
 
+    // MARK: - IBOutlet -
     @IBOutlet weak var lblTitleProduct: UILabel!
     @IBOutlet weak var lblPriceProduct: UILabel!
     @IBOutlet weak var lblQuotaProduct: UILabel!
