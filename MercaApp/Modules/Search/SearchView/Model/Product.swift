@@ -7,11 +7,14 @@
 
 import Foundation
 
+// MARK: - ViewModelProduct
 struct ViewModelProduct {
+    let id: String  
     let title: String
-    let price: String
+    let price: Double
     let quota: String
     let shippping: String
+    let image: String
 }
 
 // MARK: - ProductData
@@ -22,15 +25,17 @@ struct ProductData: Codable {
 // MARK: - Result
 struct Result: Codable {
     let id, siteID, title: String
-    let price: Int
+    let price: Double
     let currencyID: String
     let availableQuantity, soldQuantity: Int
-    let buyingMode, listingTypeID, stopTime, condition: String
+    let buyingMode, listingTypeID, stopTime: String
+    let condition: Condition
     let permalink: String
     let thumbnail: String
     let thumbnailID: String
     let acceptsMercadopago: Bool
     let installments: Installments
+    let shipping: Shipping
 
     enum CodingKeys: String, CodingKey {
         case id
@@ -46,6 +51,7 @@ struct Result: Codable {
         case thumbnailID = "thumbnail_id"
         case acceptsMercadopago = "accepts_mercadopago"
         case installments
+        case shipping
     }
 }
 
@@ -59,5 +65,21 @@ struct Installments: Codable {
     enum CodingKeys: String, CodingKey {
         case quantity, amount, rate
         case currencyID = "currency_id"
+    }
+}
+
+// MARK: - Shipping
+struct Shipping: Codable {
+    let freeShipping: Bool
+    let mode: String
+    let tags: [String]
+    let logisticType: String
+    let storePickUp: Bool
+
+    enum CodingKeys: String, CodingKey {
+        case freeShipping = "free_shipping"
+        case mode, tags
+        case logisticType = "logistic_type"
+        case storePickUp = "store_pick_up"
     }
 }

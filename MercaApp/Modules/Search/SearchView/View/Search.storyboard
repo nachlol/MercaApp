@@ -31,14 +31,14 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="search"/>
                                     </textField>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tln-GS-den">
-                                        <rect key="frame" x="20" y="60" width="44" height="29.5"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="tln-GS-den">
+                                        <rect key="frame" x="20" y="59" width="44" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="44" id="rIA-Yh-3YH"/>
                                             <constraint firstAttribute="height" constant="32" id="t9O-CO-fgo"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOJ-Y9-uY1">
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOJ-Y9-uY1">
                                         <rect key="frame" x="89" y="57.5" width="30" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="a2c-sg-LMI"/>
@@ -91,7 +91,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="book.fill" catalog="system" width="128" height="95"/>
+        <image name="logo" width="1200" height="606"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <namedColor name="blackColor">
             <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

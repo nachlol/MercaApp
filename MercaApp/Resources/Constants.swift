@@ -10,10 +10,11 @@ import Foundation
 struct Constants {
     
     struct URL {
-       static let main = "https://api.mercadolibre.com/sites/MCO/search"
+       static let main = "https://api.mercadolibre.com"
     }
     
     struct Endpoints {
-        static let textfield = "?q=Motorola%20G6"
+        static let searchItems = "/sites/MCO/search?q="
+        static let detailItem = "/items/"
     }
 }

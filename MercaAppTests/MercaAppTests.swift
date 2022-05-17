@@ -10,24 +10,29 @@ import XCTest
 
 class MercaAppTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+}
+
+class ExpectationTest {
+    var expectation: XCTestExpectation?
+    var code: Int?
+    var presentServiceErrorCalled = false
+
+    convenience init(expectation: XCTestExpectation) {
+        self.init()
+        self.expectation = expectation
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    init() {
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func presentServiceError() {
+        presentServiceErrorCalled = true
+        checkExpectation("presentServiceError")
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func checkExpectation(_ description: String) {
+        if expectation?.description == description {
+            expectation?.fulfill()
         }
     }
-
 }

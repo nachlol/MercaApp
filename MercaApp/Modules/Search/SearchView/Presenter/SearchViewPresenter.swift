@@ -8,16 +8,28 @@
 import Foundation
 
 class SearchViewPresenter: SearchViewPresentationLogic {
-    
+
     var viewController: SearchViewDisplayLogic?
     
-    func presentListProduct(items: [Result]) {
+    func presentListProduct(items: [Result], firstSearch: Bool) {
         let viewModel = items.compactMap {
-            ViewModelProduct.init(title: $0.title, price: $0.title , quota: $0.title, shippping: $0.title)
+            ViewModelProduct.init(id: $0.id,
+                                  title: $0.title,
+                                  price: $0.price ,
+                                  quota: "en \($0.installments.quantity) \($0.installments.amount.colCurrency(enableSymbol: true, fractionDigits:0))",
+                                  shippping: $0.shipping.freeShipping ? "Envío gratis": "",
+                                  image: $0.thumbnail)
         }
-        viewController?.displayListProduct(viewModel: viewModel)
+        if viewModel.count > 0 {
+            viewController?.displayListProduct(viewModel: viewModel)
+        }else if firstSearch {
+            viewController?.displayListEmptyProduct(text: "Bienvenido a \nMerca App",sizeTitle: 34)
+        }else {
+            viewController?.displayListEmptyProduct(text: "No hay publicaciones que \ncoincidan con tu búsqueda.", sizeTitle: 14)
+        }
     }
+    
     func presentServiceError() {
-        print("error")
+        viewController?.displayListEmptyProduct(text: "Tenemos Problemas de conexion \nintenta nuevamente", sizeTitle: 16)
     }
 }

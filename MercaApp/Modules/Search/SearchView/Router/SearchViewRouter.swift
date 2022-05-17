@@ -18,16 +18,16 @@ class SearchViewRouter: SearchViewWireFrame {
         let interactor = SearchViewInteractor()
         let router = SearchViewRouter()
         viewController.interactor = interactor
+        viewController.router = router
         interactor.presenter = presenter
         presenter.viewController = viewController
         router.viewController = viewController
         return viewController
     }
-    
-    
-    func goToDetailProduct() {
-        print("go tos")
+
+    func goToDetailProduct(productId: String) {
+        let viewController = DetailProductRouter.assembleModule(productId: productId)
+        viewController.modalPresentationStyle = .fullScreen
+        self.viewController?.present(viewController, animated: true, completion:  nil)
     }
-    
-    
 }

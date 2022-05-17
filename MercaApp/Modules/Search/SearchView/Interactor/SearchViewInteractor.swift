@@ -8,16 +8,14 @@
 import Foundation
 
 class SearchViewInteractor: SearchViewBusinessLogic {
-    
+
     var presenter: SearchViewPresentationLogic?
     var listProduct: [ViewModelProduct] = []
     
-    func fetchProducts(text: String) {
+    func fetchProducts(text: String, firstSearch: Bool) {
+        let textReplacing: String = text.replacingOccurrences(of: " ", with: "")
         let peticion = HttpRequests()
-        let url = URL(string: Constants.URL.main+Constants.Endpoints.textfield)!
-        let fields: [String: Any] = [
-            "q": text
-        ]
+        guard let url = URL(string: Constants.URL.main+Constants.Endpoints.searchItems+textReplacing) else {  return }
         peticion.getHttpRequestCodable(relPath: url, httpMethod: "GET", param:[:], type: ProductData.self, errorBlock: { (data,error) in
             guard let presenter = self.presenter else { return }
             presenter.presentServiceError()
@@ -26,7 +24,7 @@ class SearchViewInteractor: SearchViewBusinessLogic {
             guard let presenter = self.presenter else { return }
             switch code {
             case 200:
-                presenter.presentListProduct(items: data.results)
+                presenter.presentListProduct(items: data.results, firstSearch: firstSearch)
             default:
                 presenter.presentServiceError()
             }

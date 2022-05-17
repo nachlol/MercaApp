@@ -8,7 +8,7 @@
 import UIKit
 
 class ProductTableViewCell: UITableViewCell {
-
+    
     // MARK: - IBOutlet -
     @IBOutlet weak var lblTitleProduct: UILabel!
     @IBOutlet weak var lblPriceProduct: UILabel!
@@ -16,24 +16,26 @@ class ProductTableViewCell: UITableViewCell {
     @IBOutlet weak var lblShippingProduct: UILabel!
     @IBOutlet weak var imageProduct: UIImageView!
     
+    // MARK: - Internal Properties -
+    static let identifier = "cellProduct"
+    
+    static func nib() -> UINib {
+        return UINib(nibName: "ProductTableViewCell", bundle: nil)
+    }
+    
+    // MARK: - Lyfecycle -
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        self.selectionStyle = .none
     }
     
-    
+    // MARK: - Internal Functions -
     func configureView(_ viewmodel: ViewModelProduct) {
         lblTitleProduct.text = viewmodel.title
-        lblPriceProduct.text = viewmodel.price
+        lblPriceProduct.text = viewmodel.price.colCurrency(enableSymbol: true, fractionDigits: 0)
         lblQuotaProduct.text = viewmodel.quota
         lblShippingProduct.text = viewmodel.shippping
-        imageProduct.image = UIImage(systemName: "rectangle.inset.filled.and.person.filled")
+        imageProduct.imageFromServerURL(urlString: viewmodel.image, placeHolderImage: UIImage(systemName: "rectangle.inset.filled.and.person.filled") ?? UIImage())
     }
-
 }
+
