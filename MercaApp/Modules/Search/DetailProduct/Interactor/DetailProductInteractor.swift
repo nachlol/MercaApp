@@ -27,6 +27,5 @@ class DetailProductInteractor: DetailProductBusinessLogic {
                 presenter.presentServiceError()
             }
         }
-
     }
 }

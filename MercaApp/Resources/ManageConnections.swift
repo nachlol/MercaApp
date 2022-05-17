@@ -1,10 +1,8 @@
 //
 //  ManageConnections.swift
-//  App Ingles
+//  MercaApp
 //
-//  Created by Nicolas Chavez on 11/2/20.
-//  Copyright © 2020 Nicolas Chavez. All rights reserved.
-//
+//  Created by Nicolas Chavez on 11/05/22.
 
 import Foundation
 
@@ -88,8 +86,6 @@ class HttpRequests {
         }
         if httpMethod == "POST" {
             request.httpBody = httpBody
-//            let postString = HttpRequests.getPostString(params: param)
-//            request.httpBody = postString.data(using: .utf8)
         }else if httpMethod != "GET"{
             request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")  // the request is JSON
             request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Accept")

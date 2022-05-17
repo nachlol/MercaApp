@@ -18,7 +18,6 @@ struct DetailProductViewModel {
     let quantityProduct: Int
 }
 
-
 enum Condition: String, Codable {
     case new = "new"
     case used = "used"

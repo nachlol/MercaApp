@@ -9,7 +9,7 @@ import UIKit
 
 class DetailProductViewController: UIViewController {
 
-    
+    // MARK: - IBOutlet -
     @IBOutlet weak var lblConditionProduct: UILabel!
     @IBOutlet weak var lblTitleProduct: UILabel!
     @IBOutlet weak var lblPriceProduct: UILabel!
@@ -21,16 +21,19 @@ class DetailProductViewController: UIViewController {
     @IBOutlet weak var buttonBuyProduct: UIButton!
     @IBOutlet weak var lblQuantityProduct: UILabel!
     
+    // MARK: - Internal Properties -
     var interactor: DetailProductBusinessLogic?
     var router: DetailProductWireFrame?
     var productId: String?
     
+    // MARK: - LyfeCycle -
     override func viewDidLoad() {
         super.viewDidLoad()
         loadInfo()
         setUpButton()
     }
     
+    // MARK: - Private Functions -
     private func setUpButton(){
         buttonAddCart.layer.cornerRadius = 6.0
         buttonBuyProduct.layer.cornerRadius = 6.0
@@ -60,6 +63,7 @@ class DetailProductViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
+    // MARK: - @IBAction -
     @IBAction func backButton(_ sender: UIButton){
         router?.gotoBackHome()
     }
@@ -73,6 +77,7 @@ class DetailProductViewController: UIViewController {
     }
 }
 
+// MARK: - DetailProductDisplayLogic -
 extension DetailProductViewController: DetailProductDisplayLogic {
     
     func displayProduct(viewModel: DetailProductViewModel) {

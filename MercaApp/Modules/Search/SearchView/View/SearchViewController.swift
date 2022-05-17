@@ -21,8 +21,7 @@ class SearchViewController: UIViewController {
     // MARK: - LyfeCycle -
     override func viewDidLoad() {
         super.viewDidLoad()
-//        interactor?.fetchProducts(text: textfieldSearch.text ?? "", firstSearch: true)
-        interactor?.fetchProducts(text: "Nicolas", firstSearch: false)
+        interactor?.fetchProducts(text: textfieldSearch.text ?? "", firstSearch: true)
         registerTableview()
         setUpTextfield()
     }
